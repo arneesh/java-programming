@@ -1,0 +1,41 @@
+
+
+
+
+create table worker(
+wnumber int(9) NOT NULL,
+wname varchar(10) NOT NULL,
+mnumber int(9) NOT NULL,
+DOJ date );
+
+create table manager(
+mnumber int(9) NOT NULL,
+mname varchar(10) NOT NULL
+);
+
+insert into manager(mnumber,mname,salary)
+values
+(12345,'John',3000.00),
+(98765,'Steven',4000.00),
+(56789,'Alice',5000.00),
+(10293,'Rick',6000.00);
+
+
+
+
+insert into worker (wnumber,wname,mnumber,DOJ)
+    values
+	(12345,'John',66666,'2015-04-09'),
+	(56789,'Alice',12345,'2015-05-01'),
+	(10293,'Rick',98765,'2015-06-01'),
+	(98765,'Steven',56789,'2015-06-17');
+	
+	
+	
+	
+	
+	fname lname
+	
+	concat(fname,' ',lname) as full_name
+	
+	

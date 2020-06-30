@@ -1,0 +1,23 @@
+
+
+create table bank(
+bnumber int(9) NOT NULL,
+bname varchar(10),
+baddress varchar(25));
+
+
+create table customer(
+cname varchar(10) NOT NULL,
+balance decimal(10,2),
+acc_no int(9) NOT NULL);
+
+
+
+
+
+alter table bank add constraint c1 primary key (bnumber,bname);
+
+
+insert into customer (cname,balance,acc_no)
+values
+('arneesh',20000.00,12345);
